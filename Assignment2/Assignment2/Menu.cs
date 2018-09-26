@@ -1,6 +1,9 @@
 ﻿using System;
 
 /**
+ * Class representing a main menu in the console window with six different menu
+ * options. Each of five menu options (1-5) start its own program. The sixth menu 
+ * option (0) is used for exiting the program.
  * Created by Jonas Eiselt on 2018-09-22.
  */
 namespace Assignment2

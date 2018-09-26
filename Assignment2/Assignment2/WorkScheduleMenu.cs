@@ -1,6 +1,9 @@
 ﻿using System;
 
 /**
+ * Class representing a menu in the console window with three different menu 
+ * options. There is a menu options to return to the main window and two other 
+ * options which both start the work schedule program.
  * Created by Jonas Eiselt on 2018-09-25.
  */
 namespace Assignment2
@@ -44,7 +47,7 @@ namespace Assignment2
             Console.Write("\nYour choice: ");
             menuChoice = ConsoleInput.ReadInt();
         }
-
+        
         private void HandleInput()
         {
             if (menuChoice == 0)

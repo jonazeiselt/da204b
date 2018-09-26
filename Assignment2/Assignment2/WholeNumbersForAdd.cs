@@ -1,6 +1,7 @@
 ﻿using System;
 
 /**
+ * Class that adds entered integers together with a for loop. 
  * Created by Jonas Eiselt on 2018-09-22.
  */
 namespace Assignment2

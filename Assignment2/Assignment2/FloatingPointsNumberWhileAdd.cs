@@ -1,6 +1,7 @@
 ﻿using System;
 
 /**
+ * Class that adds entered doubles together with a while loop. 
  * Created by Jonas Eiselt on 2018-09-22.
  */
 namespace Assignment2

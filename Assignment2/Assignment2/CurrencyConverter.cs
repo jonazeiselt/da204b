@@ -1,6 +1,8 @@
 ﻿using System;
 
 /**
+ * Class that adds entered decimal SEK values together and converts them to a 
+ * desired currency.
  * Created by Jonas Eiselt on 2018-09-22.
  */
 namespace Assignment2

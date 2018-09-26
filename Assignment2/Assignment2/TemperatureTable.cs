@@ -1,6 +1,9 @@
 ﻿using System;
 
 /**
+ * Class that displays a list of two columns of temperature values, where each 
+ * column represents either temperatures in Celcius or Fahrenheit. The user has 
+ * the option to either convert 0-100°C to corresponding °F values or vice versa.
  * Created by Jonas Eiselt on 2018-09-25.
  */
 namespace Assignment2
