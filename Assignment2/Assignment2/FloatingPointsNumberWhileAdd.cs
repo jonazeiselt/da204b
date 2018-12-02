@@ -25,10 +25,11 @@ namespace Assignment2
             Console.WriteLine("Write 0 to finish!\n");
         }
 
+        /* Reads and adds entered float numbers to a sum variable until a 0 was entered. */
         private void ReadFloatNumbers()
         {
             bool zeroEntered = false;
-            while (!zeroEntered)
+            while (!zeroEntered) // Keep going until 0 is entered
             {
                 Console.Write("Write a number to add to the sum: ");
                 double floatInput = ConsoleInput.ReadDouble();
@@ -39,6 +40,7 @@ namespace Assignment2
             }
         }
 
+        /* Displays the sum of all entered float numbers in the console. */
         private void DisplayTotalSum()
         {
             Console.WriteLine("The sum is " + sumOfAllFloatNumbers);

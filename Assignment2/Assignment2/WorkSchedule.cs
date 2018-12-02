@@ -3,8 +3,9 @@
 /**
  * Class that displays a list of weeks to work, depending on the type of
  * schedule (nights or weekends). A for loop is used for printing the list. 
- * A for loop is used in this case because it requires lesser lines of code
- * than that of a while loop.
+ * A for loop is used in this case because we know the start of the schedule
+ * as well as the end of schedule, ie we know the number of iterations to
+ * be made to print the schedule.
  * Created by Jonas Eiselt on 2018-09-25. 
  */
 namespace Assignment2

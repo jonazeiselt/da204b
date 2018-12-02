@@ -13,6 +13,11 @@ namespace Assignment2
         private int menuChoice;
         private bool enableMenu;
 
+        /*
+         * Displays menu and runs a program, if user input is valid. When the program is
+         * terminated the Start-method displays menu yet again and so on until the user has
+         * input 0.
+         */
         public void Start()
         {
             enableMenu = true;
@@ -37,12 +42,14 @@ namespace Assignment2
             Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
         }
 
+        /* Asks user for menu choice until a valid one has been entered. */
         private void ReadMenuInput()
         {
             Console.Write("Your choice: ");
             menuChoice = ConsoleInput.ReadInt();
         }
 
+        /* Starts a certain program based on the input entered by the user. */
         private void HandleInput()
         {
             switch (menuChoice)

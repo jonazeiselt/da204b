@@ -26,6 +26,7 @@ namespace Assignment2
             Console.WriteLine("Summation of whole numbers using a for loop");
         }
 
+        /* Reads how many numbers to be added to the sum variable. */
         private void ReadNumberOfWholeNumbersToAdd()
         {
             Console.Write("Number of whole numbers to add? ");
@@ -34,6 +35,7 @@ namespace Assignment2
             Console.WriteLine("");
         }
 
+        /* Reads each number by means of a for-loop. */
         private void ReadEachWholeNumber()
         {
             for (int i = 1; i <= numberOfWholeNumbersToAdd; i++)
@@ -43,6 +45,7 @@ namespace Assignment2
             }
         }
 
+        /* Displays the sum of all the entered numbers. */
         private void DisplayTotalSum()
         {
             Console.WriteLine("The sum is " + sumOfAllWholeNumbers);

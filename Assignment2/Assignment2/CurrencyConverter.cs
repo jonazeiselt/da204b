@@ -32,6 +32,11 @@ namespace Assignment2
             Console.WriteLine("Write 0 to finish!\n");
         }
 
+        /*
+         * Reads double inputs, represented as amounts in SEK, until 0 is provided. 
+         * The input is added to a sum variable that later is used to convert the 
+         * sum to a foreign currency.
+         */
         private void ReadSwedishCurrencyAmounts()
         {
             decimal floatInput;
@@ -40,17 +45,18 @@ namespace Assignment2
                 Console.Write("Write an amount in Swedish currency to add to the total: ");
                 floatInput = (decimal) ConsoleInput.ReadDouble();
                 sumOfSekAmounts += floatInput;
-
             }
             while (Math.Round(floatInput, 7) != 0);
         }
 
+        /* Reads name of the desired currency the SEK amount is to be converted to. */
         private void ReadForeignCurrency()
         {
             Console.Write("Enter the foreign currency you want to exchange to: ");
             foreignCurrency = Console.ReadLine();
         }
-
+        
+        /* Reads the foreign currency exhange rate in proportion to SEK currency. */
         private void ReadForeignCurrencyExchangeRate()
         {
             Console.Write("Enter the foreign currency exchange rate, meaning how many " +
@@ -58,11 +64,16 @@ namespace Assignment2
             foreignCurrencyExchangeRate = (decimal) ConsoleInput.ReadDouble();
         }
 
+        /* Converts the total SEK amount to the desired foreign currency. */
         private void ConvertSekToForeignCurrency()
         {
             foreignCurrencyAmount = sumOfSekAmounts / foreignCurrencyExchangeRate;
         }
 
+        /*
+         * Displays, in the console, the user's entered total amount in SEK and how much
+         * in a certain foreign currency that total amount corresponds.
+         */
         private void DisplayResults()
         {
             Console.WriteLine("\nThe total amount entered is " + sumOfSekAmounts + " SEK");
